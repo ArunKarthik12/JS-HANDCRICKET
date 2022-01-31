@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+.container {
+  text-align: center;
+}
+.footer {
+    position: fixed;
+    bottom: 13px;
+    text-align: center;
+}
+h6{
+  font-size: 22px;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.buttonset1{
+  width: 100px;
+  height: 70px;
+  padding: 15px 30px;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  color: grey;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+}
+.buttonset1:hover{
+  background-color: powderblue;
+  color: rgb(67, 67, 212);
+}
+#btn-s, #btn-r, #btn-r1, #btn-r2{
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  color: grey;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+}
+#btn-s:hover{background-color: black;color: #4f81c7;}
+#btn-r:hover{background-color: black;color: #4f81c7;} 
+#btn-r1:hover{background-color: black;color: #4f81c7;} 
+#btn-r2:hover{background-color: black;color: #4f81c7;}
+#play-p{
+  font-size: 30px;
+  color: #ffd662ff;
+}
+#foot{
+  position: absolute;
+  left: 1400px;
+  font-size: 22px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+}
+/* #pic-1{
+  width: 300px;
+  position: absolute;
+  top: 1000px;
+  height: 300px;
+} */
+.m-image{
+  width:70px;
+}
+.insta-link{
+  position: fixed;
+  bottom: 20px;
+  right:10px;
+}
+.i-image{
+  width: 70px;
+}
+
+
+body {
+  
+  background-image: url(https://t3.ftcdn.net/jpg/00/77/81/02/360_F_77810263_zgIAUTTlwF0Bl8ZCxHsofgTzXlZXy9Nn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+p {
+  font-size: 1.5rem;
+  color: #4f81c7;
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  color: #f34573;
+}
+h2{
+  font-size: 0.75em;
+}
+h3{
+  font-family: 'Libre Franklin', sans-serif;
+}
+h5{
+  font-family: 'Libre Franklin', sans-serif;
+  color: #45454d;
+}
+
+.btn{
+  margin: 5px 10px 0 10px ;
+}
+
+.btn-6{
+  display:flex;
+  margin: 10px auto 10px auto;
+}
+
+
+@media only screen and (max-width:990px){
+
+.logo-0{
+  margin-top:10vh;
+}
+.img{
+  width:25%;
+}
+p{
+  font-size: 1rem;
+}
+h1{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1rem;
+}
+.m-image{
+  width:40px;
+}
+.i-image{
+  width: 40px;
+}
+}

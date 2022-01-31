@@ -1,0 +1,360 @@
+HTML:
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel='shortcut icon' href='favicon.png' type='image/x-icon' />
+    <title>Hand Cricket</title>
+    <link rel="stylesheet" href="style.css">
+      <!-- <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Libre+Franklin&display=swap" rel="stylesheet"> -->
+  </head>
+  <body class="container">
+    <div class="starting" id="start">
+        <h1>🖐 Hand Cricket 🖐</h1>
+        <input type="image" class="logo-0" id="image1" src="monkey-logo.png" alt="LOGO-click here">
+        <h6> ☝️ Tap me to Play ☝️ </h6>
+       
+    </div>
+    <div class="game-play" id="play">
+
+        <p id="play-p"> LET'S PLAY HAND CRICKET !</p>
+
+        <h3 id="score-targ"> YOUR SCORE TO BEAT : ???</h3>
+        <h3 id="score-obtained"> YOUR SCORE : ???</h3>
+        <h3 id="greeting">START THE GAME</h3>
+
+        <img src="1.png" class="img" id="1" alt="img">
+        <img src="2.png" class="img" id="2" alt="img">
+        <img src="3.png" class="img" id="3" alt="img">
+        <img src="4.png" class="img" id="4" alt="img">
+        <img src="5.png" class="img" id="5" alt="img">
+        <img src="6.png" class="img" id="6" alt="img">
+        
+        <h5>FOR NEXT STRIKE SELECT ANY NUMBER </h5>
+
+        <button type="button" id="btn-1" class="buttonset1"> ☝️ </button>
+        <button type="button" id="btn-2" class="buttonset1"> ✌️ </button>
+        <button type="button" id="btn-3" class="buttonset1"> 👌 </button>
+        <button type="button" id="btn-4" class="buttonset1"> 🖖 </button>
+        <button type="button" id="btn-5" class="buttonset1"> 🖐️ </button>
+        <button type="button" id="btn-6" class="buttonset1"> 👍 </button>
+        <button type="button" class="btn-6" id="btn-s">STRIKE💥</button>
+        <button type="button" class="btn-7" id="btn-r">RESET🔁</button>
+    </div>
+
+    <div class="victory" id="sucess">
+
+      <h1> CONGRATS YOU WON THE GAME .!! </h1>
+      <h1>😎</h1>
+      <button id="btn-r1" type="button" class="btn-8">GO TO HOME</button>
+    </div>
+
+    <div class="loss" id="lost">
+
+      <h1> AWW... BETTER LUCK NEXT TIME </h1>
+      <h1>🤕</h1>
+      <h3 id="rem-update"> YOU LOST BY ??? RUNS </h3>
+      <button id="btn-r2" type="button" class="btn-8">GO TO HOME</button>
+    </div>
+
+  <div>
+
+    <h2 class="footer" id="foot"> It's Human👨 VS AI🤖 </h2>
+  </div>
+
+    <script src="./app.js" charset="utf-8"></script>
+
+  </body>
+</html>
+
+
+CSS:
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+.container {
+  text-align: center;
+}
+.footer {
+    position: fixed;
+    bottom: 13px;
+    text-align: center;
+}
+h6{
+  font-size: 22px;
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.buttonset1{
+  width: 100px;
+  height: 70px;
+  padding: 15px 30px;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  color: grey;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+}
+.buttonset1:hover{
+  background-color: powderblue;
+  color: rgb(67, 67, 212);
+}
+#btn-s, #btn-r, #btn-r1, #btn-r2{
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  color: grey;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+}
+#btn-s:hover{background-color: black;color: #4f81c7;}
+#btn-r:hover{background-color: black;color: #4f81c7;} 
+#btn-r1:hover{background-color: black;color: #4f81c7;} 
+#btn-r2:hover{background-color: black;color: #4f81c7;}
+#play-p{
+  font-size: 30px;
+  color: #ffd662ff;
+}
+#foot{
+  position: absolute;
+  left: 1400px;
+  font-size: 22px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+}
+.m-image{
+  width:70px;
+}
+.insta-link{
+  position: fixed;
+  bottom: 20px;
+  right:10px;
+}
+.i-image{
+  width: 70px;
+}
+
+/* direct element target */
+
+body {
+  
+  background-image: url(https://t3.ftcdn.net/jpg/00/77/81/02/360_F_77810263_zgIAUTTlwF0Bl8ZCxHsofgTzXlZXy9Nn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+p {
+  font-size: 1.5rem;
+  color: #4f81c7;
+  font-family: 'Indie Flower', cursive;
+}
+
+/* header tags */
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  color: #f34573;
+}
+h2{
+  font-size: 0.75em;
+}
+h3{
+  font-family: 'Libre Franklin', sans-serif;
+}
+h5{
+  font-family: 'Libre Franklin', sans-serif;
+  color: #45454d;
+}
+
+/* buttons */
+
+.btn{
+  margin: 5px 10px 0 10px ;
+}
+
+.btn-6{
+  display:flex;
+  margin: 10px auto 10px auto;
+}
+
+
+@media only screen and (max-width:990px){
+
+.logo-0{
+  margin-top:10vh;
+}
+.img{
+  width:25%;
+}
+p{
+  font-size: 1rem;
+}
+h1{
+  font-size: 2rem;
+}
+h3{
+  font-size: 1rem;
+}
+.m-image{
+  width:40px;
+}
+.i-image{
+  width: 40px;
+}
+}
+
+
+JS:
+
+document.getElementById("play").style.display = "none";
+document.getElementById("sucess").style.display = "none";
+document.getElementById("lost").style.display = "none";
+document.getElementById("2").style.display = "none";
+document.getElementById("3").style.display = "none";
+document.getElementById("4").style.display = "none";
+document.getElementById("5").style.display = "none";
+document.getElementById("6").style.display = "none";
+
+//values used
+var currentStrike=0;
+var currentimg=1;
+var score=0;
+var target=0;
+var remaining=0;
+var randomNumber=0;
+
+function startgame(){
+  score=0;
+  currentStrike=0;
+  //hide start page
+  document.getElementById("start").style.display = "none";
+  //initialize game page
+  document.getElementById("play").style.display = "block";
+  //randomize target
+  target=Math.floor(Math.random()*60)+1;
+  document.getElementById("score-targ").innerHTML = "YOUR SCORE TO BEAT :"+target;
+  document.getElementById("score-obtained").innerHTML = "YOUR SCORE : 0";
+}
+function randomnumbergen(){
+  randomNumber = Math.floor(Math.random() * 6) + 1;
+  document.getElementById(currentimg).style.display = "none";
+  document.getElementById(randomNumber).style.display = "inline-block";
+  
+
+}
+
+function randomDice(){
+
+  if(currentStrike==0){
+      document.getElementById("greeting").innerHTML = "enter your choice first";
+  }else{
+      randomnumbergen();
+      currentimg = randomNumber;
+      if(currentStrike === randomNumber){
+        
+        document.getElementById("play").style.display = "none";
+        document.getElementById("lost").style.display = "block";
+        remaining =target-score;
+        document.getElementById("rem-update").innerHTML = "YOU LOST BY "+remaining+" RUNS";
+        score=0;
+        target=0;
+      }else{
+            score = score+currentStrike;
+            document.getElementById("score-obtained").innerHTML = "YOUR SCORE : "+score;
+            //greeting
+            if(currentStrike ===6 ){
+              document.getElementById("greeting").innerHTML = " on-mic🎤: OUT OF THE STADIUM";
+            }
+            if(currentStrike ===5 ){
+              document.getElementById("greeting").innerHTML = " on-mic🎤: SO CHEEKY...";
+            }
+            if(currentStrike ===4 ){
+              document.getElementById("greeting").innerHTML = "on-mic🎤: SAILED AWAY...";
+            }
+            if(currentStrike ===3){
+                document.getElementById("greeting").innerHTML = " on-mic🎤: GREAT RUNNING";
+            }
+            if(currentStrike ===2){
+                document.getElementById("greeting").innerHTML = " on-mic🎤: WELL PLAYED";
+            }
+            if(currentStrike ===1){
+                document.getElementById("greeting").innerHTML = " on-mic🎤: WELL PLAYED";
+            }
+            currentStrike=0;
+        }
+    }
+    if(score > target){
+      
+      //jump to victory page
+      document.getElementById("play").style.display = "none";
+      document.getElementById("sucess").style.display = "block";
+      score=0;
+      target=0;
+    }
+}
+function  homepage(){
+  // initially hide game-play
+  document.getElementById("play").style.display = "none";
+  //initially hide success
+  document.getElementById("sucess").style.display = "none";
+  //initially hide loss
+  document.getElementById("lost").style.display = "none";
+  //show initially
+  document.getElementById("start").style.display = "block";
+}
+
+
+function reset(){
+  target=Math.floor(Math.random()*60)+1;
+  document.getElementById("score-targ").innerHTML = "YOUR SCORE TO BEAT :"+target;
+  document.getElementById("score-obtained").innerHTML = "YOUR SCORE : 0";
+  currentStrike=0;
+  score=0;
+  document.getElementById("greeting").innerHTML = "enter your choice first";
+}
+function setStrike1(){
+  currentStrike = 1;
+}
+function setStrike2(){
+  currentStrike = 2;
+}
+function setStrike3(){
+  currentStrike = 3;
+}
+function setStrike4(){
+  currentStrike = 4;
+}
+function setStrike5(){
+  currentStrike = 5;
+}
+function setStrike6(){
+  currentStrike = 6;
+}
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+
+document.getElementById("image1").addEventListener("click", startgame);  //done checked
+document.getElementById("btn-s").addEventListener("click", randomDice); //done and fixed
+document.getElementById("btn-r").addEventListener("click", reset);  //doneand fixed
+document.getElementById("btn-r1").addEventListener("click", homepage );  //done checked
+document.getElementById("btn-r2").addEventListener("click", homepage); //done checked
+
+document.getElementById("btn-1").addEventListener("click", setStrike1);  //done checked below
+document.getElementById("btn-2").addEventListener("click", setStrike2);  //done
+document.getElementById("btn-3").addEventListener("click", setStrike3);  //done
+document.getElementById("btn-4").addEventListener("click", setStrike4);  //done
+document.getElementById("btn-5").addEventListener("click", setStrike5);  //done
+document.getElementById("btn-6").addEventListener("click", setStrike6);  //done
